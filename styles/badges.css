@@ -121,8 +121,8 @@
 #work-badge-1 {
   height: 188px;
   position: fixed;
-  top: 15vh;
-  right: 15vw;
+  top: 15%;
+  right: 15%;
   background: url(../assets/badges/badge-9.svg);
 }
 
@@ -133,8 +133,8 @@
 #work-badge-2 {
   width: 168px;
   position: fixed;
-  top: 60vh;
-  left: 30vw;
+  top: 60%;
+  left: 30%;
   background: url(../assets/badges/badge-10.svg);
 }
 
@@ -144,8 +144,8 @@
 
 #work-badge-3 {
   position: fixed;
-  bottom: 10vh;
-  right: 5vw;
+  bottom: 10%;
+  right: 5%;
   background: url(../assets/badges/badge-11.svg);
 }
 
@@ -213,11 +213,11 @@
   }
 
   #work-badge-2 {
-    left: 15vw;
+    left: 15%;
   }
 
   #work-badge-3 {
-    right: 10vw;
+    right: 10%;
   }
 }
 
@@ -248,10 +248,10 @@
   }
 
   #work-badge-2 {
-    left: 15vw;
+    left: 15%;
   }
 
   #work-badge-3 {
-    right: 10vw;
+    right: 10%;
   }
 }

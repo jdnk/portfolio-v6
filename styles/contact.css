@@ -13,7 +13,7 @@ header > h1 {
 }
 
 section {
-  width: 75vw;
+  width: 75%;
   position: relative;
   background: var(--color-3);
 }
@@ -23,7 +23,7 @@ img {
   top: 50%;
   left: 62.5%;
   transform: translate(-50%, -50%);
-  height: 80vh;
+  height: 80%;
   z-index: 1;
 }
 

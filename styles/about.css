@@ -18,7 +18,7 @@ main {
 }
 
 section {
-  width: 75vw;
+  width: 75%;
   position: relative;
   background: var(--color-2);
 }
