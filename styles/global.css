@@ -101,10 +101,16 @@ section {
     height: fit-content;
     flex-direction: row;
     align-items: center;
+    gap: 8px;
+  }
+
+  header > h1 {
+    padding: 0 16px;
   }
 
   header > p {
     text-align: left;
     padding: 0 24px 8px;
+    margin: 0;
   }
 }
