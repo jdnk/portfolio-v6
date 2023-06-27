@@ -18,7 +18,6 @@ main {
 }
 
 section {
-  width: 75%;
   position: relative;
   background: var(--color-2);
 }
@@ -70,10 +69,6 @@ h2 {
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) { 
-  section {
-    width: 100%;
-  }
-
   main {
     gap: 128px;
   }
@@ -88,10 +83,6 @@ h2 {
 }
 
 @media screen and (max-width: 480px) { 
-  section {
-    width: 100%;
-  }
-
   main {
     gap: 84px;
   }
