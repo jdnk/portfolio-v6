@@ -21,6 +21,14 @@ img {
   overflow: hidden;
 }
 
+.card > h1 {
+  z-index: 3;
+}
+
+.card > img {
+  z-index: 2;
+}
+
 .card:hover {
   cursor: pointer;
 }
@@ -85,13 +93,12 @@ img {
   }
 
   img {
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) translateX(0) scale(150%);
+    transform: translate(-50%, -50%) scale(1.5);
   }
 
   .card:hover > img {
-    transform: translate(-50%, -50%) translateX(0) scale(100%);
+    transform: translate(-50%, -50%);
   }
 
   #contact {
@@ -125,13 +132,12 @@ img {
   }
 
   img {
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) translateX(0) scale(150%);
+    transform: translate(-50%, -50%) scale(1.5);
   }
 
   .card:hover > img {
-    transform: translate(-50%, -50%) translateX(0) scale(100%);
+    transform: translate(-50%, -50%);
   }
 
   #contact {
