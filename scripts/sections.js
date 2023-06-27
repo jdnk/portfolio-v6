@@ -1,6 +1,6 @@
 const changeWidthOnHover = (sections, isMobile) => {
-  const hoverSize = 60;
-  const nonHoverSize = 20;
+  const hoverSize = [60, 50];
+  const nonHoverSize = [20, 12.5];
   const delay = 300;
 
   sections.forEach(section => {
@@ -13,15 +13,15 @@ const changeWidthOnHover = (sections, isMobile) => {
 
           if (subsection.id === section.id) {
             if (isMobile) {
-              e.style.height = `${hoverSize}%`;
+              e.style.height = `${hoverSize[1]}%`;
             } else {
-              e.style.width = `${hoverSize}%`;
+              e.style.width = `${hoverSize[0]}%`;
             }
           } else {
             if (isMobile) {
-              e.style.height = `${nonHoverSize}%`;
+              e.style.height = `${nonHoverSize[1]}%`;
             } else {
-              e.style.width = `${nonHoverSize}%`;              
+              e.style.width = `${nonHoverSize[0]}%`;              
             }
           }
         })
@@ -33,9 +33,9 @@ const changeWidthOnHover = (sections, isMobile) => {
         sections.forEach(subsection => {
           const e = document.querySelector(subsection.id);
           if (isMobile) {
-            e.style.height = `${subsection.size}%`;
+            e.style.height = `${subsection.size[1]}%`;
           } else {
-            e.style.width = `${subsection.size}%`;
+            e.style.width = `${subsection.size[0]}%`;
           }
         })
       }, delay);
@@ -47,9 +47,9 @@ const changeWidthOnHover = (sections, isMobile) => {
 };
 
 const sections = [
-  {id: "#contact", size: 20},
-  {id: "#about", size: 30},
-  {id: "#work", size: 50}
+  {id: "#contact", size: [20, 15]},
+  {id: "#about", size: [30, 25]},
+  {id: "#work", size: [50, 35]}
 ];
 
 document.addEventListener("DOMContentLoaded", () => {

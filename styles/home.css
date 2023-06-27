@@ -1,40 +1,36 @@
+body, main {
+  height: 100%;
+}
+
 main {
   padding: 0;
   margin: 0 0 0 25%;
 }
 
-body {
-  overflow: hidden;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-48px, -50%);
-}
-
 .card {
+  height: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: var(--transition);
   text-decoration: none;
   overflow: hidden;
 }
 
 .card > h1 {
-  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .card > img {
-  z-index: 2;
+  z-index: 1;
 }
 
 .card:hover {
   cursor: pointer;
-}
-
-.card:hover > img {
-  transform: translate(-50%, -50%) translateX(22.5vw);
 }
 
 #contact {
@@ -92,28 +88,27 @@ img {
     align-items: flex-start;
   }
 
-  img {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
+  .card > img {
+    scale: 1.5;
   }
 
   .card:hover > img {
-    transform: translate(-50%, -50%);
+    scale: 1;
   }
 
   #contact {
     width: 100%;
-    height: 20%;
+    height: 15%;
   }
 
   #about {
     width: 100%;
-    height: 30%;
+    height: 25%;
   }
 
   #work {
     width: 100%;
-    height: 50%;
+    height: 35%;
   }
 }
 
@@ -131,27 +126,26 @@ img {
     align-items: flex-start;
   }
 
-  img {
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
+  .card > img {
+    scale: 1.5;
   }
 
   .card:hover > img {
-    transform: translate(-50%, -50%);
+    scale: 1;
   }
 
   #contact {
     width: 100%;
-    height: 20%;
+    height: 15%;
   }
 
   #about {
     width: 100%;
-    height: 30%;
+    height: 25%;
   }
 
   #work {
     width: 100%;
-    height: 50%;
+    height: 35%;
   }
 }
