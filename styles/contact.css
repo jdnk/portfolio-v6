@@ -1,0 +1,46 @@
+body {
+  background: var(--color-3);
+}
+
+header {
+  background: var(--color-3);
+  transition: var(--transition);
+}
+
+header > h1 {
+  -webkit-text-fill-color: var(--color-4);
+  -webkit-text-stroke-color: var(--color-1);
+}
+
+section {
+  width: 75vw;
+  position: relative;
+  background: var(--color-3);
+}
+
+img {
+  position: fixed;
+  top: 50%;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-6);
+
+}
+
+h2 {
+  position: relative;
+  color: var(--color-6);
+  word-wrap: break-word;
+  margin: 0 24px 0 0;
+  z-index: 2;
+}

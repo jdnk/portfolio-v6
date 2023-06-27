@@ -1,0 +1,151 @@
+main {
+  padding: 0;
+  margin: 0 0 0 25vw;
+}
+
+body {
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-48px, -50%);
+}
+
+.card {
+  position: relative;
+  transition: var(--transition);
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover > img {
+  transform: translate(-50%, -50%) translateX(25vw);
+}
+
+#contact {
+  width: 15vw;
+  background: var(--color-3);
+}
+
+#contact > h1 {
+  -webkit-text-fill-color: var(--color-4);
+  -webkit-text-stroke-color: var(--color-1);
+}
+
+#contact > img {
+  height: 80%;
+}
+
+#about {
+  width: 25vw;
+  background: var(--color-2);
+}
+
+#about > h1 {
+  -webkit-text-fill-color: var(--color-3);
+  -webkit-text-stroke-color: var(--color-5);
+}
+
+#about > img {
+  height: 70%;
+}
+
+#work {
+  width: 35vw;
+  background: var(--color-1);
+}
+
+#work > h1 {
+  -webkit-text-fill-color: var(--color-6);
+  -webkit-text-stroke-color: var(--color-4);
+}
+
+#work > img {
+  height: 80%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) { 
+  main {
+    flex-direction: column;
+    margin: 25vh 0 0 0;
+  }
+
+  header {
+    width: 100vw;
+    height: 25vh;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(0) scale(150%);
+  }
+
+  .card:hover > img {
+    transform: translate(-50%, -50%) translateX(0) scale(100%);
+  }
+
+  #contact {
+    width: 100vw;
+    height: 15vh;
+  }
+
+  #about {
+    width: 100vw;
+    height: 25vh;
+  }
+
+  #work {
+    width: 100vw;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  main {
+    flex-direction: column;
+    margin: 25vh 0 0 0;
+  }
+
+  header {
+    width: 100vw;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(0) scale(150%);
+  }
+
+  .card:hover > img {
+    transform: translate(-50%, -50%) translateX(0) scale(100%);
+  }
+
+  #contact {
+    width: 100vw;
+    height: 15vh;
+  }
+
+  #about {
+    width: 100vw;
+    height: 25vh;
+  }
+
+  #work {
+    width: 100vw;
+    height: 35vh;
+  }
+}

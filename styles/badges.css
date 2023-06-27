@@ -1,0 +1,257 @@
+.badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  position: absolute;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  top: 0;
+  left: 0;
+  margin: 24px;
+}
+
+.badge-1, .badge-2 {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 192px;
+  height: 192px;
+  transition: var(--transition);
+  z-index: 3;
+  text-align: center;
+}
+
+.badge-1:hover {
+  transform: rotate(165deg);
+}
+
+.badge-2:hover {
+  transform: rotate(-165deg);
+}
+
+#home-badge-1 {
+  background: url(../assets/badges/badge-1.svg);
+}
+
+#home-badge-1 > h3 {
+  color: var(--color-5);
+}
+
+#home-badge-2 {
+  position: relative;
+  right: 48px;
+  background: url(../assets/badges/badge-2.svg);
+}
+
+#home-badge-2 > h3 {
+  color: var(--color-1);
+}
+
+#home-badge-3 {
+  background: url(../assets/badges/badge-3.svg);
+}
+
+#home-badge-3 > h3 {
+  color: var(--color-4);
+}
+
+#about-badge-1 {
+  position: absolute;
+  top: -96px;
+  right: 48px;
+  background: url(../assets/badges/badge-4.svg);
+}
+
+#about-badge-1 > h3 {
+  color: var(--color-2);
+}
+
+#about-badge-2 {
+  position: absolute;
+  top: 33.33%;
+  left: 96px;
+  background: url(../assets/badges/badge-5.svg);
+}
+
+#about-badge-2 > h3 {
+  color: var(--color-3);
+}
+
+#about-badge-3 {
+  position: absolute;
+  bottom: -96px;
+  right: 96px;
+  background: url(../assets/badges/badge-6.svg);
+}
+
+#about-badge-3 > h3 {
+  color: var(--color-1);
+}
+
+#about-badge-4 {
+  width: 168px;
+  position: absolute;
+  bottom: -96px;
+  left: 24px;
+  background: url(../assets/badges/badge-7.svg);
+}
+
+#about-badge-4 > h3 {
+  color: var(--color-5);
+}
+
+#about-badge-5 {
+  position: absolute;
+  bottom: -96px;
+  left: 192px;
+  background: url(../assets/badges/badge-8.svg);
+}
+
+#about-badge-5 > h3 {
+  color: var(--color-2);
+}
+
+#work-badge-1 > h3 {
+  color: var(--color-4);
+}
+
+#work-badge-1 {
+  height: 188px;
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  background: url(../assets/badges/badge-9.svg);
+}
+
+#work-badge-2 > h3 {
+  color: var(--color-4);
+}
+
+#work-badge-2 {
+  width: 168px;
+  position: fixed;
+  top: 60vh;
+  left: 30vw;
+  background: url(../assets/badges/badge-10.svg);
+}
+
+#work-badge-3 > h3 {
+  color: var(--color-6);
+}
+
+#work-badge-3 {
+  position: fixed;
+  bottom: 10vh;
+  right: 5vw;
+  background: url(../assets/badges/badge-11.svg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  .badge-1, .badge-2 {
+    width: 128px;
+    height: 128px;
+  }
+
+  #about-badge-4, #work-badge-2 {
+    width: 112px;
+  }
+
+  #work-badge-1 {
+    height: 125px;
+  }
+
+  #about-badge-1 {
+    top: -64px;
+  }
+
+  #about-badge-3, #about-badge-4, #about-badge-5 {
+    bottom: -64px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) { 
+  .badges {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 24px;
+    position: absolute;
+    width: calc(100% - 48px);
+    height: calc(100% - 48px);
+    top: 0;
+    left: 0;
+    margin: 24px;
+  }
+
+  .badge-1, .badge-2 {
+    width: 84px;
+    height: 84px;
+  }
+
+  #about-badge-4, #work-badge-2 {
+    width: 74px;
+  }
+
+  #work-badge-1 {
+    height: 82px;
+  }
+
+  #home-badge-1, #home-badge-2, #home-badge-3 {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #about-badge-1 {
+    top: -42px;
+  }
+
+  #about-badge-3, #about-badge-4, #about-badge-5 {
+    bottom: -42px;
+  }
+
+  #work-badge-2 {
+    left: 15vw;
+  }
+
+  #work-badge-3 {
+    right: 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .badge-1, .badge-2 {
+    width: 84px;
+    height: 84px;
+  }
+
+  #about-badge-4, #work-badge-2 {
+    width: 74px;
+  }
+
+  #work-badge-1 {
+    height: 82px;
+  }
+
+  #home-badge-1, #home-badge-2, #home-badge-3 {
+    display: none;
+  }
+
+  #about-badge-1 {
+    top: -42px;
+  }
+
+  #about-badge-3, #about-badge-4, #about-badge-5 {
+    bottom: -42px;
+  }
+
+  #work-badge-2 {
+    left: 15vw;
+  }
+
+  #work-badge-3 {
+    right: 10vw;
+  }
+}

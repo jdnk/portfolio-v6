@@ -1,0 +1,68 @@
+.arrow-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+  cursor: pointer;
+}
+
+.arrow-left {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+.arrow-left::after,
+.arrow-left::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 3px;
+}
+
+.arrow-left::after {
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid var(--text-color);
+  border-left: 2px solid var(--text-color);
+  transform: rotate(45deg);
+  bottom: 7px;
+}
+
+.arrow-left::before {
+  width: 16px;
+  height: 2px;
+  bottom: 10px;
+  background: var(--text-color);
+}
+
+#contact-back:hover > .arrow-left::after, #contact-back:hover > .arrow-left::before {
+  border-color: var(--color-3);
+}
+
+#contact-back:hover > .arrow-left::before {
+  background: var(--color-3);
+}
+
+#about-back:hover > .arrow-left::after, #about-back:hover > .arrow-left::before {
+  border-color: var(--color-2);
+}
+
+#about-back:hover > .arrow-left::before {
+  background: var(--color-2);
+}
+
+#work-back:hover > .arrow-left::after, #work-back:hover > .arrow-left::before {
+  border-color: var(--color-1);
+}
+
+#work-back:hover > .arrow-left::before {
+  background: var(--color-1);
+}

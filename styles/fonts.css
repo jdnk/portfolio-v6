@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Honey";
+  src: url("../assets/fonts/HoneyDemo-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas";
+  src: url("../assets/fonts/NeueHaasDisplay-Roman.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Haas Thin";
+  src: url("../assets/fonts/NeueHaasDisplay-Thin.ttf");
+  font-weight: thin;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lego Maniac";
+  src: url("../assets/fonts/LegoManiac-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, p {
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1 {
+  font-family: "Honey";
+  font-size: 96px;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin: 0;
+  transform: rotate(-90deg) translateY(100%) scale(-1, -1);
+  transform-origin: 0 0;
+  padding: 8px 24px;
+  -webkit-text-stroke-width: 1px;
+}
+
+h2, p {
+  font-family: "Neue Haas Thin";
+}
+
+h2 { 
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 128px;
+  line-height: 1.2;
+}
+
+h3 { 
+  font-family: "Lego Maniac";
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 84px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) { 
+  h1 {
+    transform: none;
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 84px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  h1 {
+    transform: none;
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+}

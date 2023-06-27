@@ -1,0 +1,40 @@
+body {
+  background: var(--color-1);
+}
+
+header {
+  background: var(--color-1);
+  transition: var(--transition);
+}
+
+header > h1 {
+  -webkit-text-fill-color: var(--color-6);
+  -webkit-text-stroke-color: var(--color-4);
+}
+
+section {
+  width: 75vw;
+  position: relative;
+  background: var(--color-1);
+}
+
+img {
+  position: fixed;
+  top: 50%;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  position: relative;
+  color: var(--color-6);
+  word-wrap: break-word;
+  margin: 0 24px 0 0;
+  z-index: 2;
+}
