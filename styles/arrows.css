@@ -44,25 +44,25 @@
 }
 
 #contact-back:hover > .arrow-left::after, #contact-back:hover > .arrow-left::before {
-  border-color: var(--color-3);
-}
-
-#contact-back:hover > .arrow-left::before {
-  background: var(--color-3);
-}
-
-#about-back:hover > .arrow-left::after, #about-back:hover > .arrow-left::before {
-  border-color: var(--color-2);
-}
-
-#about-back:hover > .arrow-left::before {
-  background: var(--color-2);
-}
-
-#work-back:hover > .arrow-left::after, #work-back:hover > .arrow-left::before {
   border-color: var(--color-1);
 }
 
-#work-back:hover > .arrow-left::before {
+#contact-back:hover > .arrow-left::before {
   background: var(--color-1);
+}
+
+#about-back:hover > .arrow-left::after, #about-back:hover > .arrow-left::before {
+  border-color: var(--color-5);
+}
+
+#about-back:hover > .arrow-left::before {
+  background: var(--color-5);
+}
+
+#work-back:hover > .arrow-left::after, #work-back:hover > .arrow-left::before {
+  border-color: var(--color-4);
+}
+
+#work-back:hover > .arrow-left::before {
+  background: var(--color-4);
 }
