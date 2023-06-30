@@ -4,12 +4,16 @@ body {
 
 header {
   background: var(--color-1);
-  transition: var(--transition);
+  transition: none;
 }
 
 header > h1 {
   -webkit-text-fill-color: var(--color-6);
   -webkit-text-stroke-color: var(--color-4);
+}
+
+main {
+  transition: none;
 }
 
 section {
@@ -24,6 +28,7 @@ img {
   transform: translate(-50%, -50%);
   height: 80%;
   z-index: 1;
+  transition: none;
 }
 
 a {

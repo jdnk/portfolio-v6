@@ -4,7 +4,7 @@ body {
 
 header {
   background: var(--color-2);
-  transition: var(--transition);
+  transition: none;
 }
 
 header > h1 {
@@ -15,6 +15,7 @@ header > h1 {
 main {
   flex-direction: column;
   gap: 192px;
+  transition: none;
 }
 
 section {
@@ -29,6 +30,7 @@ img {
   z-index: 1;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: none;
 }
 
 a {
