@@ -45,6 +45,13 @@ h2 {
   z-index: 2;
 }
 
+.code {
+  padding: 24px;
+  background: var(--bg-color);
+  border-radius: 8px;
+  margin: 24px;
+}
+
 .black-text {
   color: var(--bg-color);
 }
