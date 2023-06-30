@@ -25,6 +25,7 @@ section {
 img {
   position: absolute;
   height: 80vh;
+  max-width: 75vw;
   z-index: 1;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -73,6 +74,10 @@ h2 {
     gap: 128px;
   }
 
+  img {
+    max-width: none;
+  }
+
   #img-3 {
     height: 50vh;
   }
@@ -85,6 +90,10 @@ h2 {
 @media screen and (max-width: 480px) { 
   main {
     gap: 84px;
+  }
+
+  img {
+    max-width: none;
   }
 
   #img-3 {
