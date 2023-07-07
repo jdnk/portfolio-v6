@@ -39,7 +39,7 @@ a {
 
 h2 {
   position: relative;
-  color: var(--color-5);
+  color: var(--color-1);
   word-wrap: break-word;
   margin: 0 24px 0 0;
   z-index: 2;

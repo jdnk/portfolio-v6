@@ -37,7 +37,7 @@ a {
 
 h2 {
   position: relative;
-  color: var(--color-6);
+  color: var(--color-3);
   word-wrap: break-word;
   margin: 0 24px 0 0;
   z-index: 2;
